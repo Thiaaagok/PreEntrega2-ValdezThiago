@@ -22,8 +22,18 @@ main{
     font-family: 'Bebas Neue', sans-serif;
 }
 /* CSS NAV UNIVERSAL */
+.logo-ani{
+    transition: all 2s;
+    transition: transform 2s;
+}
+.logo-ani:hover{
+    transform: scale(1.11);
+}
 
-.text-colors{
+navbar-toggler{
+    color: white;
+}
+.text-color{
     color: white;
 }
 /* CSS FOOTER UNIVERSAL */
@@ -86,21 +96,20 @@ h1{
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
+    flex-wrap: wrap;
 }
 /* CCS CERVEZAS */
 .las-cervezas{
     text-align: center;
     font-size: 150%;
-    padding: 10px 0px 10px 0px;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-bottom: 0.5px solid white;
 }
 .contenedor-cerveza{
     display: flex;
     flex-direction: row;
     background-image: url(../Img/cervezas-img/fondo-negro2.avif);
     margin-bottom: 80px;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .img-cerveza{
