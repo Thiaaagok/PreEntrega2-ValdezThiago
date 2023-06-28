@@ -17,6 +17,7 @@ header{
     color: white;
     font-family: 'Bebas Neue', sans-serif;
 }
+
 main{
     color: white;
     font-family: 'Bebas Neue', sans-serif;
@@ -33,6 +34,7 @@ main{
 navbar-toggler{
     color: white;
 }
+
 .text-color{
     color: white;
 }
@@ -43,11 +45,11 @@ navbar-toggler{
     border-top: 1px solid white;
     width: 100%;
     color: white;
-    font-family: 'Bebas Neue', sans-serif;
     padding-bottom: 24px;
     border-bottom: 1px solid white;
     margin-bottom: 24px;
 }
+
 .pie-pagina .grupo-1{
     width: 100%;
     max-width: 1200px;
@@ -97,47 +99,51 @@ h1{
     justify-content: space-around;
     text-align: center;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
-/* CCS CERVEZAS */
-.las-cervezas{
-    text-align: center;
-    font-size: 150%;
-    border-bottom: 0.5px solid white;
-}
-.contenedor-cerveza{
+
+.tipo-comida2{
     display: flex;
     flex-direction: row;
-    background-image: url(../Img/cervezas-img/fondo-negro2.avif);
-    margin-bottom: 80px;
-    padding-top: 20px;
-}
-
-.img-cerveza{
-    display: flex;
-    justify-content: center;
-}
-
-.cerveza-name{
-    font-size: 250%;
-    margin-bottom: 25px;
-}
-.datos-cerveza{
-    display: flex;
+    justify-content: space-around;
+    text-align: center;
     flex-wrap: wrap;
-    list-style: none;
-    font-size: 150%;
+}
+.tipo-comida2 figure{
+    padding: 30px 25px 0px 25px;
+    border: 2px solid wheat;
+}
+.tipo-comida figure{
+    padding: 30px 25px 0px 25px;
+    border: 2px solid wheat;
 }
 
-.datos-cerveza li{
+.main-menu{
+    padding-top: 25px;
+    border-top: 1px solid white;
+}
+/* CCS CERVEZAS */
+
+/* CSS NUESTRA HISTORIA*/
+
+.historia{
     display: flex;
-    flex-direction: column;
-    margin-right: 50px;
+    padding-top: 25px;
+    border-top: 1px solid white;
+    padding-bottom: 25px;
+}
+
+.text-caption{
+    text-align: center;
+    margin-top: 35px;
+}
+
+.text-information{
+    text-align: center;
     margin-top: 25px;
 }
+/*BREAKPOINT */
 
-/* BREAKPOINTS */
-
-/* FOOTER BREAKPOINT */
 @media screen and (max-width:800px) {
     .pie-pagina .grupo-1{
         width: 90%;
@@ -145,4 +151,11 @@ h1{
         grid-gap: 30px;
         text-align: center;
     }
+    .historia{
+        flex-wrap: wrap;
+    }
+    .img-luisito{
+        max-width: 100%;
+    }
 }
+
