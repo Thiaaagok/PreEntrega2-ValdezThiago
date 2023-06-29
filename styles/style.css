@@ -2,7 +2,6 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: black; 
 }
 
 
@@ -13,19 +12,38 @@ a{
     text-decoration: none;
 }
 
+nav{
+    background-color: black; 
+}
 header{
     color: white;
     font-family: 'Bebas Neue', sans-serif;
+    background-color: black; 
 }
 
 main{
     color: white;
     font-family: 'Bebas Neue', sans-serif;
+    background-color: black; 
+}
+
+footer{
+    background-color: black; 
 }
 /* CSS NAV UNIVERSAL */
+
+.sticky{
+    position: -webkit-sticky;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1020;
+    padding: 0px 0px 0px 0px;
+}
 .logo-ani{
     transition: all 2s;
     transition: transform 2s;
+    width: 90px;
 }
 .logo-ani:hover{
     transform: scale(1.11);
@@ -46,8 +64,6 @@ navbar-toggler{
     width: 100%;
     color: white;
     padding-bottom: 24px;
-    border-bottom: 1px solid white;
-    margin-bottom: 24px;
 }
 
 .pie-pagina .grupo-1{
@@ -93,6 +109,7 @@ h1{
     border-bottom: 1px solid white;
 }
 /* CSS MENU */
+
 .tipo-comida{
     display: flex;
     flex-direction: row;
@@ -119,11 +136,38 @@ h1{
 }
 
 .main-menu{
-    padding-top: 25px;
+    padding-top: 100px;
     border-top: 1px solid white;
 }
 /* CCS CERVEZAS */
+.main-cervezas{
+    padding: 150px 0px 50px 0px;
+}
+.Caption-Cervezas{
+    margin-bottom: 0px;
+    text-align: center;
+    padding-bottom: 25px;
+}
 
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    justify-items: center;
+    row-gap: 150px;
+}
+
+.grid-container div{
+    width: 300px;
+    height: auto;
+    background-image: url("../Img/cervezas-img/madera-oscura.jpg");
+    border: 2px solid wheat;
+}
+
+.grid-container div h4{
+    text-align: center;
+    margin-bottom: 0px;
+}
 /* CSS NUESTRA HISTORIA*/
 
 .historia{
@@ -142,6 +186,31 @@ h1{
     text-align: center;
     margin-top: 25px;
 }
+
+/* CSS CONTACTO */
+
+.main-contacto{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.form-container{
+    justify-content: center;
+    margin: 0px 25% 0px 25%;
+    padding:25px 25px 25px;
+    background-color: dimgray;
+}
+
+.box-form{
+    padding-bottom: 25px;
+}
+.box-form input{
+    width: 100%;
+}
+
+.box-form textarea{
+    width: 100%;
+}
+
 /*BREAKPOINT */
 
 @media screen and (max-width:800px) {
@@ -156,6 +225,12 @@ h1{
     }
     .img-luisito{
         max-width: 100%;
+    }
+    .grid-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .form-container{
+        margin: 10px;
     }
 }
 
